@@ -1,4 +1,8 @@
 vim.g.mapleader = " "
+
+-- Save on ctrl + s, both normal and insert mode 
+vim.keymap.set({"n","i"}, "<C-s>", "<cmd>w<CR>")
+
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
